@@ -219,6 +219,103 @@
             </div>
         </div>
     </section>
+    <!-- ==================== LEARNING VIDEOS SECTION ==================== --><section id="learning-videos" class="learning-videos-section py-5">
+    <div class="container">    <!-- Section Header -->
+    <div class="learning-header text-center mb-5">
+        <span class="learning-badge">
+            <i class="fas fa-play-circle"></i> Video Learning
+        </span>
+
+        <h2 class="learning-title">
+            Learning Videos
+        </h2>
+
+        <p class="learning-subtitle">
+            Learn Computer Engineering topics through easy and
+            informative videos.
+        </p>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="video-controls">
+
+        <div class="video-search-box">
+            <i class="fas fa-search"></i>
+            <input
+                type="text"
+                id="videoSearch"
+                placeholder="Search videos, topics..."
+                autocomplete="off">
+        </div>
+
+        <div class="video-category-box">
+            <select id="videoCategory">
+                <option value="all">All Categories</option>
+                <option value="programming">Programming</option>
+                <option value="web">Web Development</option>
+                <option value="database">Database</option>
+                <option value="network">Computer Network</option>
+                <option value="security">Information Security</option>
+                <option value="ai">AI & ML</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- Video Count -->
+    <div class="video-result-info">
+        <span id="videoResultCount">0 videos available</span>
+    </div>
+
+    <!-- Video Cards -->
+    <div id="videoGrid" class="video-grid">
+
+        <!-- Videos will be loaded by videos.js -->
+
+    </div>
+
+    <!-- No Result -->
+    <div id="noVideosFound" class="no-videos-found">
+        <i class="fas fa-video-slash"></i>
+        <h4>No videos found</h4>
+        <p>Try another topic or search keyword.</p>
+    </div>
+
+</div>
+
+</section><!-- ==================== VIDEO PLAYER MODAL ==================== --><div id="videoModal" class="video-modal"><div class="video-modal-content">
+
+    <button id="closeVideoModal" class="close-video-modal">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <div class="video-player-wrapper">
+        <iframe
+            id="videoPlayer"
+            src=""
+            title="Learning Video"
+            allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture;
+            web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="video-modal-info">
+        <h3 id="modalVideoTitle">Learning Video</h3>
+        <p id="modalVideoDescription">
+            Watch this video to learn more.
+        </p>
+
+        <span id="modalVideoCategory" class="modal-video-category">
+            Learning
+        </span>
+    </div>
+
+</div>
+
+</div><!-- Learning Videos JavaScript --><script src="js/videos.js"></script><!-- ====================================================== -->
     <!-- ============================================ -->
 <!-- Department Library Chatbot - QR Code Section -->
 <!-- K.D. Polytechnic, Patan                     -->
